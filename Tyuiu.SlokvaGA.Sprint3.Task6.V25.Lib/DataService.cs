@@ -6,9 +6,10 @@ namespace Tyuiu.SlokvaGA.Sprint3.Task6.V25.Lib
     {
         public int GetSumTheDivisors(int startValue, int stopValue)
         {
+            int x;
             int sum = 0;
-            for (int x = startValue; x <= stopValue; x++)
-                for (int d = 1; d <= x; d++)
+            for (x = startValue; x <= stopValue; x++)
+                for (int d = 1; d < 10; d++)
                         if (x % d == 0)
                             sum += d;
             return sum;
